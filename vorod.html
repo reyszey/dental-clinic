@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/vorod.css">
+    <link rel="shortcut icon" href="./images/Asset 1.png">
+
+    <title>ورود</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container signup">
+            <form action="" onsubmit = "return checkPassword(this)" onsubmit="location.href='index.html'" >
+                <h1>ساخت حساب</h1>
+                <span>به کلینیک ما خوش امدید</span>
+                <input type="text" placeholder="نام و نام خانوادگی" required>
+                <input type="email" name="" id="" placeholder="ایمیل"required>
+                <input type="password" name="password1" id="" placeholder="رمز عبور">
+                <input type="password" name="password2" id="rpass" placeholder="تکرار رمز عبور">
+                <input type="submit" value="ساخت حساب" id="sakhthsb">
+                
+
+            </form>
+        </div>
+
+        <div class="form-container signin">
+            <form action="" onsubmit="vorod()">
+                <h1>ورود به حساب</h1>
+                <span>قبلا عضو شدید؟</span>
+                <input type="email" name="" id="" placeholder="ایمیل" required>
+                <input type="password" name="" id="pass" placeholder="رمز عبور" required>
+                <input type="submit" value="ورود" id="vorodhsb">
+                
+
+
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>خوش آمدید</h1>
+                    <p>اگه قبلا عضو شدی وارد حسابت شو تا راحت با ما در ارتباط باشی</p>
+                    <button class="ghost" id="signIn">ورود</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 dir="rtl">سلام!</h1>
+                    <p>اگه هنوز حسابت رو نساختی روی دکمه زیر کلیک کن</p>
+                    <button class="ghost" id="signUp" >ایجادحساب</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/vorod.js"></script>
+</body>
+</html>

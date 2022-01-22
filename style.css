@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 8px;
+    box-sizing: border-box;
+    padding-bottom: 0;
+}
+
+@font-face {
+    font-family: lalezar;
+    src: url(/font/Lalezar-Regular.ttf);
+}
+@font-face {
+    font-family: aviny;
+    src: url(/font/AVINY.TTF);
+}
+@font-face {
+    font-family: entezar;
+    src: url(/font/Entezar.v1.00.ttf);
+}
+@font-face {
+    font-family: vazir;
+    src: url(/font/Vazir.ttf);
+}
+@font-face {
+    font-family: khand;
+    src: url(/font/Khandevane.ttf);
+}
+
+body{
+    width: fit-content;
+}
+
+.section{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+   
+
+
+}
+.chap {
+    color: #3e2e8f;
+    /* float: left; */
+    /* margin-top: 40px; */
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+    width: 25%;
+    margin-bottom: 100px;
+}
+.chap h1 {
+    font-family: 'entezar';
+    font-weight: bolder;
+    font-size: 50px;
+}
+.chap h2,p{
+    padding-top: -2px;
+    font-family: 'vazir';
+}
+.chap p {
+    font-weight: bolder;
+    padding: 15px;
+}
+.rast{
+    width: 75%;
+    position: relative;
+}
+.rast img{
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+
+ 
+}
+
+ 
+@media screen and (max-width:800px) {
+    .rast img{
+      width: 100%; 
+    }
+    .chap{
+        position: relative;
+        width: 100%;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+    }
+    body{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navlist li {
+        visibility: hidden;
+    }
+} 
+/* ennddddddddd */
+nav {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navlist {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+
+}
+
+nav h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 23px;
+    color: #3e2e8f;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+nav i {
+    color: #3e2e8f;
+    /* width: 100%; */
+    font-size: 20px;
+}
+
+.navlist i {
+    display: flex;
+    flex-direction: row-reverse;
+    
+
+}
+
+.navlist a {
+    text-decoration: none;
+    font-family: 'lalezar';
+    font-weight: lighter;
+    font-size: 20px;
+    color: #3e2e8f;
+    height: max-content;
+    align-items: center;
+    transition: 0.4s;
+
+
+}
+
+.navbar {
+    padding: 3px 10px;
+    /* width: 80px; */
+    margin: 0 auto;
+    
+}
+.bar, .logo , .logo h1{
+    padding-top: 0px;
+}
+.logo i {
+    padding:5px 0px 0px 0px;
+}
+
+.navlist li:hover {
+    border-radius: 12px;
+    background-color: #3e2e8f;
+    color: white;
+    font-family: 'lalezar';
+}
+
+.navlist a:hover{
+    color: white;
+}
+.navlist .bar img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.book {
+    background-color: #3e2e8f;
+    text-align: center;
+    color: white;
+    font-family: 'lalezar';
+    font-weight: lighter;
+    border: none;
+    border-radius: 2rem;
+    width: 200px;
+    padding: 5px;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
